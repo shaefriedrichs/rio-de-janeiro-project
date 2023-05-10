@@ -17,7 +17,7 @@ body {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -33,9 +33,18 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
 .card {
   background: white;
   margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
 
 .card-body {
@@ -253,5 +262,9 @@ footer a {
   p,
   li {
     text-align: center;
+  }
+
+  .embed {
+    display: none;
   }
 }
